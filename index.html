@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grade & Percentage Calculator</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        
+    
+</head>
+<body>
+    <div  id="box">
+        <div class="container">
+            <div class="left">
+            <div class="heading">
+                <h1>Student</h1>
+                <h1>Grade & Percentage</h1>
+                <h1>Calculator</h1>
+            </div>
+
+
+        </div>
+        <div class="right">
+            <form @submit.prevent="total() | percentage | grading() | results()">
+                <table>
+                    <tr>
+                         <td>   <label>Mathematics : </label> </td><td><input type="number" v-model="math" placeholder="Out Of 100" min="0"  max="100" required></td>
+                    </tr>
+                    <tr>
+                         <td>   <label>English : </label> </td><td><input type="number" v-model="english" placeholder="Out Of 100" min="0"  max="100" required></td>
+                    </tr>
+                    <tr>
+                         <td>   <label>Hindi : </label> </td><td><input type="number" v-model="hindi" placeholder="Out Of 100"  min="0" max="100" required></td>
+                    </tr>
+                    <tr>
+                         <td>   <label>Science : </label> </td><td><input type="number" v-model="science" placeholder="Out Of 100"  min="0" max="100" required></td>
+                    </tr>
+                    <tr>
+                         <td>   <label>SocialScience: </label> </td><td><input type="number" v-model="socialscience" placeholder="Out Of 100" min="0"  max="100" required></td>
+                    </tr>
+                    <tr>
+                         <td>   <label>Calculate: </label> </td><td><button type="submit"  class="btn">Calculate Grade</button></td>
+                    </tr>
+                      
+                </table>
+            </form>
+        </div>
+    </div>
+        <div class="bottom">
+            <h1>Results</h1>
+            <table style="width:100%">
+                <tr>
+                  <th>Total</th>
+                  <th>Percentage</th>
+                  <th>Grade</th>
+                  <th>Pass/Fail</th>
+                </tr>
+                <tr>
+                  <td>{{ sum }}</td>
+                  <td>{{ percent }} %</td>
+                  <td>{{ grade }}</td>
+                  <td>{{ result }}</td>
+                </tr>
+                
+              </table>
+        </div>
+    
+</div>
+    
+</body>
+<script src="./script.js"></script>
+</html>

@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background:rgb(1, 255, 98);
+}
+#box{
+    background:black;
+    width:800px;
+    /* height:500px; */
+    position: absolute;         
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-radius:20px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 18px #111010;
+}
+.container{
+    display:flex;
+    flex-direction:row;
+    
+}
+
+
+.left{
+    width:50%;
+    height:100%;
+}
+.heading{
+    /* background:rgb(65, 38, 38); */
+    width:80%;
+    position: relative;         
+    top: 20%;
+    left: 10%;
+}
+.heading h1{
+    font-size:30px;
+    color:rgb(1, 255, 98);
+    border-left: 4px solid rgb(1, 255, 98);
+    padding:10px;
+    font-family:sans-serif;
+}
+.right{
+    width:50%;
+    height:100%;
+    /* background:orange; */
+}
+
+form{
+    color:white;
+    /* background:aqua; */
+    position:relative;
+}
+
+.right form table tr{
+    /* width:100%; */
+    /* background:rgb(184, 184, 106); */
+}
+
+.right form table tr td{
+    padding:12px;
+    /* background:yellow; */
+    /* text-align:center; */
+    font-size:18px;
+    font-family:arial;
+}
+.right input{
+    padding:5px;
+    text-align:center;
+    font-size:16px;
+
+}
+.btn{
+    background-color: rgb(1, 255, 98);
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.bottom{
+    text-align:center;
+    padding:10px;
+}
+.bottom table{
+    padding:20px;
+}
+.bottom h1{
+    text-align:center;
+    color:rgb(1, 255, 98);
+    
+}
+.bottom th{
+    color:rgb(255, 184, 31);
+    font-size:18px;
+}
+.bottom td{
+    color:rgb(1, 255, 98);
+    font-size:20px;
+    
+}
